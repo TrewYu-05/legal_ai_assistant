@@ -1,6 +1,10 @@
 import sqlite3
+import os
+from pathlib import Path
 
-DB_NAME = "memory.db"
+# 使用绝对路径以确保在不同工作目录下（例如Streamlit Cloud）都能正确找到并创建数据库
+BASE_DIR = Path(__file__).resolve().parent.parent
+DB_NAME = os.path.join(BASE_DIR, "memory.db")
 
 # =========================
 # 初始化数据库

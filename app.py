@@ -79,7 +79,7 @@ memory_extract_prompt = """
 
 如果没有可记忆内容，返回：
 
-{}
+{{}}
 
 可提取内容包括：
 
@@ -91,10 +91,10 @@ memory_extract_prompt = """
 
 JSON格式示例：
 
-{
+{{
     "username": "张三",
     "case_type": "劳动仲裁"
-}
+}}
 
 用户输入：
 
